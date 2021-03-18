@@ -9,18 +9,18 @@
                 <div class="header-top-contact col-6 col-lg-3 d-flex flex-row flex-lg-column justify-content-end justify-content-lg-evenly">
                     <div id="header-top-contact-email" class="header-top-contact-item text-center">
                         <div class="header-top-contact-imgs d-flex justify-content-evenly">
-                            <a href="mailto:vovkadim1983@gmail.com"><img src="<?php echo get_template_directory_uri()?>/img/contacts/email.png" /></a>
+                            <a href="<?php echo PermaLinks("email")["value"] ?>"><img src="<?php echo PermaLinks("email")["icon"] ?>" /></a>
                         </div>
-                        <a href="mailto:vovkadim1983@gmail.com">vovkadim1983@gmail.com</a>
+                        <a href="mailto:<?php echo PermaLinks("email")["value"] ?>"><?php echo PermaLinks("email")["value"] ?></a>
                     </div>
                     <div id="header-top-contact-telegram" class="header-top-contact-item text-center">
                         <div class="header-top-contact-imgs d-flex justify-content-evenly">
-                            <a href="tel:380979059973"><img src="<?php echo get_template_directory_uri()?>/img/contacts/phone.png" /></a>
+                            <a href="tel:<?php echo PermaLinks("phone")["value"] ?>"><img src="<?php echo get_template_directory_uri()?>/img/contacts/phone.png" /></a>
                             <img src="<?php echo get_template_directory_uri()?>/img/contacts/telegram.png" />
                         </div>
                         <span>Телефон и месенджеры</span>
                         <br>
-                        <a href="tel:380979059973">+380979059973</a>
+                        <a href="tel:<?php echo PermaLinks("phone")["value"] ?>">+<?php echo PermaLinks("phone")["value"] ?></a>
                     </div>
                 </div>
                 <div class="header-top-name col-12 d-flex d-lg-none align-items-center justify-content-center text-uppercase">Ефектів енерджи солюшинс</div>

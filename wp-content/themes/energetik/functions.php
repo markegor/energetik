@@ -5,13 +5,32 @@ function dump($Array) {
     echo "</pre>";
 }
 
-function SetUp() {
-    add_theme_support("post-thumbnails");
-    register_nav_menus([
-        "header" => "Header Pages",
-        "footer" => "Footer Pages",
-    ]);
-    wp_enqueue_style("style", get_stylesheet_uri());
+function PermaLinks($Type) {
+    if($Type === "email") {
+        return [
+            "value" => "vovkadim1983@gmail.com",
+            "icon" => get_template_directory_uri() . "/img/contacts/email.png",
+        ];
+    } else if($Type === "phone") {
+        return [
+            "value" => "380979059973",
+            "icon" => get_template_directory_uri() . "/img/contacts/phone.png",
+        ];
+    } else if($Type === "facebook") {
+        return [
+            "value" => "",
+            "icon" => get_template_directory_uri() . "/img/contacts/facebook.png",
+        ];
+    } else if($Type === "linkedin") {
+        return [
+            "value" => "",
+            "icon" => get_template_directory_uri() . "/img/contacts/linkedin.png",
+        ];
+    } else if($Type === "telegram") {
+        return [
+            "value" => "",
+            "icon" => get_template_directory_uri() . "/img/contacts/telegram.png",
+        ];
+    }
 }
-add_action("after_setup_theme", "SetUp");
 ?>

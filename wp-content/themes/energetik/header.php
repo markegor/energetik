@@ -47,11 +47,11 @@
             </svg>
         </div>
         <div class="w-100 p-3 bg-dark rounded">
-            <div class="w-100 d-flex justify-content-between mb-4">
+            <div class="w-100 d-flex justify-content-around mb-4">
                 <a class="header-mobile-item btn btn-light btn-sm<?php if(is_front_page()) echo " current" ?>" href="/">О нас</a>
                 <a class="header-mobile-item btn btn-light btn-sm<?php if(is_page("news")) echo " current" ?>" href="/news">Новости</a>
             </div>
-            <div class="w-100 d-flex justify-content-between">
+            <div class="w-100 d-flex justify-content-around">
                 <a class="header-mobile-item btn btn-light btn-sm<?php if(is_page("portfolio")) echo " current" ?>" href="/portfolio">Портфолио</a>
                 <a class="header-mobile-item btn btn-light btn-sm<?php if(is_page("contacts")) echo " current" ?>" href="/contacts">Контакты</a>
             </div>

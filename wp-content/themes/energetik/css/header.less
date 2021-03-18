@@ -185,6 +185,7 @@
 }
 #header {
     background: #ffffff;
+    z-index: 100;
 
     &.adminbar {
         margin-top: 32px;
@@ -234,11 +235,14 @@
     }
     .header-mobile {
         background: white;
+        z-index: 100;
         #header-mobile-close-btn {
             top: 1rem;
             right: 1rem;
         }
         .header-mobile-item {
+            width: 40%;
+            max-width: 110px;
             opacity: 0.5;
             transition: 0.3s;
 

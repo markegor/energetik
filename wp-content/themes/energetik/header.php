@@ -5,18 +5,18 @@
                 <div class="header-top-logo col-6 col-lg-3">
                     <a href="/"><img src="<?php echo get_template_directory_uri()?>/img/logo.png" class="w-auto h-100 d-block mr-auto m-lg-auto" /></a>
                 </div>
-                <div class="header-top-name col-lg-6 d-none d-lg-block text-center text-uppercase">Ефектів енерджи солюшинс</div>
+                <div class="header-top-name col-lg-6 p-0 d-none d-lg-block text-uppercase">Ефектів енерджи солюшинс</div>
                 <div class="header-top-contact col-6 col-lg-3 d-flex flex-row flex-lg-column justify-content-end justify-content-lg-evenly">
                     <div id="header-top-contact-email" class="header-top-contact-item text-center">
-                        <div class="header-top-contact-imgs d-flex justify-content-evenly">
+                        <div class="header-top-contact-imgs d-flex justify-content-center">
                             <a href="<?php echo PermaLinks("email")["value"] ?>"><img src="<?php echo PermaLinks("email")["icon"] ?>" /></a>
                         </div>
                         <a href="mailto:<?php echo PermaLinks("email")["value"] ?>"><?php echo PermaLinks("email")["value"] ?></a>
                     </div>
                     <div id="header-top-contact-telegram" class="header-top-contact-item text-center">
-                        <div class="header-top-contact-imgs d-flex justify-content-evenly">
+                        <div class="header-top-contact-imgs d-flex justify-content-center">
                             <a href="tel:<?php echo PermaLinks("phone")["value"] ?>"><img src="<?php echo get_template_directory_uri()?>/img/contacts/phone.png" /></a>
-                            <img src="<?php echo get_template_directory_uri()?>/img/contacts/telegram.png" />
+                            <img class="ms-lg-3" src="<?php echo get_template_directory_uri()?>/img/contacts/telegram.png" />
                         </div>
                         <span>Телефон и месенджеры</span>
                         <br>
@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="header-bottom">
-        <div class="container header-bottom-content d-flex justify-content-between">
+        <div class="container header-bottom-content d-flex justify-content-evenly">
             <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_front_page()) echo " current" ?>" href="/">О нас</a> 
             <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_page("news")) echo " current" ?>" href="/news">Новости</a>
             <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_page("portfolio")) echo " current" ?>" href="/portfolio">Портфолио</a> 

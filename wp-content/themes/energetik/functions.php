@@ -18,12 +18,12 @@ function PermaLinks($Type) {
         ];
     } else if($Type === "facebook") {
         return [
-            "value" => "",
+            "value" => "https://www.facebook.com/groups/effectiveenergysolutions",
             "icon" => get_template_directory_uri() . "/img/contacts/facebook.png",
         ];
     } else if($Type === "linkedin") {
         return [
-            "value" => "",
+            "value" => "https://www.linkedin.com/in/vadim-vovk-a0137467/",
             "icon" => get_template_directory_uri() . "/img/contacts/linkedin.png",
         ];
     } else if($Type === "telegram") {

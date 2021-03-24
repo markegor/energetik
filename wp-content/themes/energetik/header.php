@@ -18,7 +18,7 @@
                             <a href="tel:<?php echo PermaLinks("phone")["value"] ?>"><img src="<?php echo PermaLinks("phone")["icon"] ?>" /></a>
                             <a href="<?php echo PermaLinks("whatsapp")["value"] ?>"><img class="ms-lg-3" src="<?php echo PermaLinks("whatsapp")["icon"] ?>" /></a>
                         </div>
-                        <span>Телефон и месенджеры</span>
+                        <span>Телефон і месенджери</span>
                         <br>
                         <a href="tel:<?php echo PermaLinks("phone")["value"] ?>">+<?php echo PermaLinks("phone")["value"] ?></a>
                     </div>

@@ -26,10 +26,10 @@ function PermaLinks($Type) {
             "value" => "https://www.linkedin.com/in/vadim-vovk-a0137467/",
             "icon" => get_template_directory_uri() . "/img/contacts/linkedin.png",
         ];
-    } else if($Type === "telegram") {
+    } else if($Type === "whatsapp") {
         return [
-            "value" => "",
-            "icon" => get_template_directory_uri() . "/img/contacts/telegram.png",
+            "value" => "viber://chat?number=0979059973",
+            "icon" => get_template_directory_uri() . "/img/contacts/whatsapp.svg",
         ];
     }
 }

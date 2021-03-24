@@ -15,8 +15,8 @@
                     </div>
                     <div id="header-top-contact-telegram" class="header-top-contact-item text-center">
                         <div class="header-top-contact-imgs d-flex justify-content-center">
-                            <a href="tel:<?php echo PermaLinks("phone")["value"] ?>"><img src="<?php echo get_template_directory_uri()?>/img/contacts/phone.png" /></a>
-                            <img class="ms-lg-3" src="<?php echo get_template_directory_uri()?>/img/contacts/telegram.png" />
+                            <a href="tel:<?php echo PermaLinks("phone")["value"] ?>"><img src="<?php echo PermaLinks("phone")["icon"] ?>" /></a>
+                            <a href="<?php echo PermaLinks("whatsapp")["value"] ?>"><img class="ms-lg-3" src="<?php echo PermaLinks("whatsapp")["icon"] ?>" /></a>
                         </div>
                         <span>Телефон и месенджеры</span>
                         <br>
@@ -29,10 +29,10 @@
     </div>
     <div class="header-bottom">
         <div class="container header-bottom-content d-flex justify-content-start justify-content-lg-evenly">
-            <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_front_page()) echo " current" ?>" href="/">О нас</a> 
-            <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_page("news")) echo " current" ?>" href="/news">Новости</a>
-            <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_page("portfolio")) echo " current" ?>" href="/portfolio">Портфолио</a> 
-            <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_page("contacts")) echo " current" ?>" href="/contacts">Контакты</a> 
+            <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_front_page()) echo " current" ?>" href="/">Про нас</a> 
+            <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_page("news")) echo " current" ?>" href="/news">Новини</a>
+            <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_page("portfolio")) echo " current" ?>" href="/portfolio">Портфоліо</a> 
+            <a class="header-bottom-item d-none d-lg-block btn btn-light btn-sm<?php if(is_page("contacts")) echo " current" ?>" href="/contacts">Контакти</a> 
             <div class="dropdown">
                 <div class="header-bottom-item d-block d-lg-none btn btn-light btn-sm" id="dropdown-menu" data-bs-toggle="dropdown" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -40,10 +40,10 @@
                     </svg>
                 </div>
                 <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
-                    <li><a class="dropdown-item py-2<?php if(is_front_page()) echo " fw-bold" ?>" href="/">О нас</a></li>
-                    <li><a class="dropdown-item py-2<?php if(is_page("news")) echo " fw-bold" ?>" href="/news">Новости</a></li>
-                    <li><a class="dropdown-item py-2<?php if(is_page("portfolio")) echo " fw-bold" ?>" href="/portfolio">Портфолио</a></li>
-                    <li><a class="dropdown-item py-2<?php if(is_page("contacts")) echo " fw-bold" ?>" href="/contacts">Контакты</a></li>
+                    <li><a class="dropdown-item py-2<?php if(is_front_page()) echo " fw-bold" ?>" href="/">Про нас</a></li>
+                    <li><a class="dropdown-item py-2<?php if(is_page("news")) echo " fw-bold" ?>" href="/news">Новини</a></li>
+                    <li><a class="dropdown-item py-2<?php if(is_page("portfolio")) echo " fw-bold" ?>" href="/portfolio">Портфоліо</a></li>
+                    <li><a class="dropdown-item py-2<?php if(is_page("contacts")) echo " fw-bold" ?>" href="/contacts">Контакти</a></li>
                 </ul>
             </div>
         </div>
